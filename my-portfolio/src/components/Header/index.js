@@ -1,35 +1,24 @@
-import React from 'react';
-//import Navigation from './components/Navigation';
+import React, { useState } from 'react';
+import Navigation from '../Navigation';
 
-function Header() {
+function Header(props) {
+  const {
+    setAboutSelected,
+    setProjectSelected,
+    setResumeSelected,
+    setContactSelected
+  } = props;
+
   return (
-    <section>
-      <h1 id="header">J Michael Smith</h1>
-      <nav>
-      <ul>
-        <li>
-          <a href="#about">
-            About Me
-          </a>
-        </li>
-        <li>
-          <a href="#portfolio">
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            Contact Me
-          </a>
-        </li>
-        <li>
-          <a href="#resume">
-            Resume
-          </a>
-        </li>
-      </ul>
-    </nav>
-    </section>
+    <header>
+      <h1>J Michael Smith</h1>
+      <Navigation
+        setAboutSelected={setAboutSelected}
+        setProjectSelected={setProjectSelected}
+        setResumeSelected={setResumeSelected}
+        setContactSelected={setContactSelected}
+      />
+    </header>
   )
 }
 
