@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 function Navigation(props) {
-  // const {
-  //   categories = [],
-  //   setCurrentCategory,
-  //   currentCategory
-  // } = props;
-
   const categories = [
     {name: 'About Me'},
-    {name: 'Portfolio'},
+    {name: 'Projects'},
     {name: 'Resume'},
     {name: 'Contact'}
   ];
@@ -28,23 +22,23 @@ function Navigation(props) {
       setProjectSelected(false)
       setResumeSelected(false)
       setContactSelected(false)
-    } else if (name === 'Portfolio') {
-      setProjectSelected(true)
+    } else if (name === 'Projects') {
       setAboutSelected(false)
+      setProjectSelected(true)
       setResumeSelected(false)
       setContactSelected(false)
     } else if (name === 'Resume') {
-      setResumeSelected(true)
       setAboutSelected(false)
       setProjectSelected(false)
+      setResumeSelected(true)
       setContactSelected(false)
     } else if (name === 'Contact') {
-      setContactSelected(true)
       setAboutSelected(false)
       setProjectSelected(false)
       setContactSelected(false)
+      setContactSelected(true)
     }
-  }
+  };
 
   useEffect(() => {
     document.title = 'J Michael Smith - ' + currentCategory.name;
@@ -53,22 +47,6 @@ function Navigation(props) {
   return (
     <nav>
       <ul>
-        {/* {categories.map((category) => (
-          <li
-            className={`${
-              currentCategory.name === category.name && 'navActive'
-              }`}
-            key={category.name}
-          >
-            <span
-              onClick={() => {
-                categorySelected(category.name)
-                setCurrentCategory(category)
-              }}
-            >
-            </span>
-          </li>
-        ))} */}
         {categories.map((category) => (
           <li key={category.name} onClick={() => {
             categorySelected(category.name)
