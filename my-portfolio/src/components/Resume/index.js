@@ -1,67 +1,51 @@
 import React from 'react';
+// import resume from '../../assets/images';
 
 function Resume() {
+  const frontendArr = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'Web APIs',
+    'jQuery',
+    'Bootstrap',
+    'Server-Side APIs',
+    'React'
+  ];
+
+  const backendArr = [
+    'Node.js',
+    'Object-Oriented Programming',
+    'Express.js',
+    'MySQL',
+    'Model-View-Controller',
+    'NoSQL (Mongoose/MongoDB)',
+    'Progressive Web Applications',
+    'REST'
+  ]
   return (
     <section>
-      <h1 id="resume">Resume and Proficiencies</h1>
-      <p>
-        A copy of my resume can be found <a href=''>here.</a>
-      </p>
+      <h2 id="resume">Resume and Proficiencies</h2>
       <div>
-        <h2 id='proficiencies'>Proficiencies</h2>
-        <h3>Front-end Development</h3>
+        <h3>Resume</h3>
+        <p>
+          A copy of my resume can be found <a href='' download>here.</a>
+        </p>
+      </div>
+      <div>
+        <h3>Front-end Development Proficiencies</h3>
         <ul>
-          <li>
-            HTML
-          </li>
-          <li>
-            CSS
-          </li>
-          <li>
-            JavaScript
-          </li>
-          <li>
-            Web APIs
-          </li>
-          <li>
-            jQuery
-          </li>
-          <li>
-            Bootstrap
-          </li>
-          <li>
-            Server-Side APIs
-          </li>
-          <li>
-            React
-          </li>
+          {frontendArr.map((name) => (
+            <li key={name}>{name}</li>
+          ))}
         </ul>
-        <h3>Back-end Development</h3>
+      </div>
+      <div>
+        <h3>Back-end Development Proficiencies</h3>
         <ul>
-          <li>
-            Node.js
-          </li>
-          <li>
-            Object-Oriented Programming
-          </li>
-          <li>
-            Express.js
-          </li>
-          <li>
-            MySQL
-          </li>
-          <li>
-            Object-Relational Mapping
-          </li>
-          <li>
-            Model-View-Controller
-          </li>
-          <li>
-            NoSQL (Mongoose/MongoDB)
-          </li>
-          <li>
-            Progressive Web Applications
-          </li>
+          {backendArr.map((name) => (
+            <li key={name}>{name}</li>
+          ))}
         </ul>
       </div>
     </section>
