@@ -6,18 +6,22 @@ function Header(props) {
     setAboutSelected,
     setProjectSelected,
     setResumeSelected,
-    setContactSelected
+    //setContactSelected
   } = props;
 
   return (
     <header>
-      <h1>J Michael Smith</h1>
-      <Navigation
-        setAboutSelected={setAboutSelected}
-        setProjectSelected={setProjectSelected}
-        setResumeSelected={setResumeSelected}
-        setContactSelected={setContactSelected}
-      />
+      <div>
+        <h1>J Michael Smith</h1>
+      </div>
+      <div className='navBar'>
+        <Navigation
+          setAboutSelected={setAboutSelected}
+          setProjectSelected={setProjectSelected}
+          setResumeSelected={setResumeSelected}
+          //setContactSelected={setContactSelected}
+        />
+      </div>
     </header>
   )
 }
