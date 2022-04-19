@@ -17,6 +17,7 @@
 
 body {
   background-color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -68,8 +69,61 @@ a:link {
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
   transition: 0.5s;
+}
+
+.sectionContainer {
+  padding: 4rem 7rem;
+}
+
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 75%;
+}
+
+.profPic {
+  display: block;
+  max-width: 75%;
+  height: auto;
+}
+
+.profPicOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.imageContainer:hover .profPicOverlay {
+  width: 75%;
+}
+
+.overlayText {
+  white-space: nowrap;
+  color: var(--quaternary-color);
+  font-size: 1.2rem;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.aboutText {
+  text-align: right;
 }
 
 footer {
