@@ -1,5 +1,5 @@
 import React from 'react';
-// import resume from '../../assets/images';
+import resume from '../../assets/images/resume-pdf.pdf';
 
 function Resume() {
   const frontendArr = [
@@ -22,14 +22,17 @@ function Resume() {
     'NoSQL (Mongoose/MongoDB)',
     'Progressive Web Applications',
     'REST'
-  ]
+  ];
+
   return (
     <section>
       <h2 id="resume">Resume and Proficiencies</h2>
       <div>
         <h3>Resume</h3>
         <p>
-          A copy of my resume can be found <a href='' download>here.</a>
+          <a href={resume} className='resumeDownload' download>
+            Download my resume.
+          </a>
         </p>
       </div>
       <div>

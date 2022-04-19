@@ -3,27 +3,31 @@ import React from 'react';
 function Project() {
   const projectArr = [
     {
-      alt:'talkie-box',
+      alt: 'talkie-box ',
       text: 'MERN Stack',
       href: 'https://protected-forest-66303.herokuapp.com/',
-      github: 'https://github.com/wcastellan/talkie-box'
+      githubText: ' GitHub Repo',
+      githubLink: 'https://github.com/wcastellan/talkie-box'
     },
     {
-      alt: 'LyricLover',
+      alt: 'LyricLover ',
       text: 'HTML | CSS (Bulma) | JavaScript',
       href: 'https://osamadahnoun.github.io/LyricLover/',
-      github: 'https://github.com/Osamadahnoun/LyricLover'
+      githubText: ' GitHub Repo',
+      githubLink: 'https://github.com/Osamadahnoun/LyricLover'
     },
     {
-      alt: 'Your Weather Dashboard',
+      alt: 'Your Weather Dashboard ',
       text: 'JavaScript | OpenWeatherMap API',
       href: 'https://theprattler.github.io/six-slaundering-salamanders/',
-      github: 'https://github.com/theprattler/six-slaundering-salamanders'
+      githubText: ' GitHub Repo',
+      githubLink: 'https://github.com/theprattler/six-slaundering-salamanders'
     },
     {
-      alt: 'Professional README Generator',
+      alt: 'Professional README Generator ',
       text: 'JavaScript | Inquirer',
-      github: 'https://github.com/theprattler/nine-nosy-neighbors'
+      githubText: ' GitHub Repo',
+      githubLink: 'https://github.com/theprattler/nine-nosy-neighbors'
     }
   ]
   return (
@@ -37,9 +41,11 @@ function Project() {
             >
               {project.alt}
             </span>
+            |
             <span
-              onClick={() => window.open(`${project.github}`)}
+              onClick={() => window.open(`${project.githubLink}`)}
             >
+              {project.githubText}
             </span>
             <p>{project.text}</p>
           </div>

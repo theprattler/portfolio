@@ -4,7 +4,7 @@ import aboutImage from '../../assets/images/test-two.jpg';
 function About() {
   return (
     <section>
-      <h1 id="about">A Little About Me</h1>
+      <h2 id="about">A Little About Me</h2>
       <div>
         <img src={aboutImage} style={{ width: '20%' }} alt='black and white of J Michael Smith'></img>
       </div>

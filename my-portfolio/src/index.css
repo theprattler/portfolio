@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /* body bg, nav and footer links, title text */
+  --primary-color: #c3e0e5;
+  /* header and footer bg */
+  --secondary-color: #274472;
+  --tertiary-color: #5885af;
+  --quaternary-color: #eff542;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+main {
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--secondary-color);
+}

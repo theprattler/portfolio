@@ -4,7 +4,7 @@ import Project from '../Project';
 function Gallery() {
   return (
     <div>
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <Project />
     </div>
   )

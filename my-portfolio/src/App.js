@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 import About from './components/About';
 import Resume from './components/Resume';
 
@@ -18,18 +18,20 @@ function App() {
         setAboutSelected={setAboutSelected}
         setProjectSelected={setProjectSelected}
         setResumeSelected={setResumeSelected}
-        setContactSelected={setContactSelected}
+        // setContactSelected={setContactSelected}
       />
       <main>
         {aboutSelected && !projectSelected && !resumeSelected && !contactSelected ? (
           <About />
         ) : projectSelected && !aboutSelected && !resumeSelected && !contactSelected ? (
           <Gallery />
-        ) : resumeSelected && !aboutSelected && !projectSelected && !contactSelected ? (
-          <Resume />
         ) : (
-          <Contact />
-        )}
+          <Resume />
+        ) 
+        // : (
+        //   <Contact />
+        // )
+        }
       </main>
       <Footer />
     </div>

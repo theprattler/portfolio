@@ -5,7 +5,7 @@ function Navigation(props) {
     {name: 'About Me'},
     {name: 'Projects'},
     {name: 'Resume'},
-    {name: 'Contact'}
+    // {name: 'Contact'}
   ];
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -32,12 +32,13 @@ function Navigation(props) {
       setProjectSelected(false)
       setResumeSelected(true)
       setContactSelected(false)
-    } else if (name === 'Contact') {
-      setAboutSelected(false)
-      setProjectSelected(false)
-      setContactSelected(false)
-      setContactSelected(true)
-    }
+    } 
+    // else if (name === 'Contact') {
+    //   setAboutSelected(false)
+    //   setProjectSelected(false)
+    //   setContactSelected(false)
+    //   setContactSelected(true)
+    // }
   };
 
   useEffect(() => {
