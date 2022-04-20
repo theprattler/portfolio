@@ -47,7 +47,7 @@ function Navigation(props) {
 
   return (
     <nav>
-      <ul>
+      <ul className='navLinks'>
         {categories.map((category) => (
           <li key={category.name} onClick={() => {
             categorySelected(category.name)

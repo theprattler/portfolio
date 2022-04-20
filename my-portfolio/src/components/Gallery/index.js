@@ -3,7 +3,7 @@ import Project from '../Project';
 
 function Gallery() {
   return (
-    <div>
+    <div className='sectionContainer'>
       <h2>Projects</h2>
       <Project />
     </div>

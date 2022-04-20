@@ -14,7 +14,7 @@ function Header(props) {
       <div>
         <h1>J Michael Smith</h1>
       </div>
-      <div className='navBar'>
+      <div>
         <Navigation
           setAboutSelected={setAboutSelected}
           setProjectSelected={setProjectSelected}

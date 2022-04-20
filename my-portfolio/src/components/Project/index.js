@@ -31,23 +31,27 @@ function Project() {
     }
   ]
   return (
-    <section>
+    <section className='projectsContainer'>
       {projectArr.map((project, i) => (
-        <div>
-          <img src={require(`../../assets/images/${i}.png`)} alt={project.alt} />
+        <div className='projectContainer'>
+          <img src={require(`../../assets/images/${i}.png`)} className='projectPic' title={project.alt} alt={project.alt} />
           <div>
             <span
+              className='projectSpan'
+              title='Deployed App'
               onClick={() => window.open(`${project.href}`)}
             >
               {project.alt}
             </span>
             |
             <span
+              className='projectSpan'
+              title='GitHub Repository'
               onClick={() => window.open(`${project.githubLink}`)}
             >
               {project.githubText}
             </span>
-            <p>{project.text}</p>
+            <p className='projectTools'>{project.text}</p>
           </div>
         </div>
       ))}
