@@ -18,6 +18,7 @@
 body {
   background-color: var(--primary-color);
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -60,8 +61,12 @@ main {
   padding: 2rem;
 }
 
-h2, h3, p {
+h2, h3, p, .proficText {
   color: var(--secondary-color);
+}
+
+h3 {
+  padding-bottom: 0.5rem;
 }
 
 a:link {
@@ -74,7 +79,7 @@ a:hover {
 }
 
 .sectionContainer {
-  padding: 4rem 7rem;
+  padding: 4rem 14rem;
 }
 
 .aboutContainer {
@@ -123,6 +128,20 @@ a:hover {
 }
 
 .aboutText {
+  text-align: right;
+}
+
+.resumeContainer {
+  padding-top: 2rem;
+}
+
+.proficContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.backendContainer {
   text-align: right;
 }
 

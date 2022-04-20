@@ -25,9 +25,9 @@ function Resume() {
   ];
 
   return (
-    <section>
+    <section className='sectionContainer'>
       <h2 id="resume">Resume and Proficiencies</h2>
-      <div>
+      <div className='resumeContainer'>
         <h3>Resume</h3>
         <p>
           <a href={resume} className='resumeDownload' download>
@@ -35,21 +35,23 @@ function Resume() {
           </a>
         </p>
       </div>
-      <div>
-        <h3>Front-end Development Proficiencies</h3>
-        <ul>
-          {frontendArr.map((name) => (
-            <li key={name}>{name}</li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <h3>Back-end Development Proficiencies</h3>
-        <ul>
-          {backendArr.map((name) => (
-            <li key={name}>{name}</li>
-          ))}
-        </ul>
+      <div className='proficContainer'>
+        <div>
+          <h3>Front-end Development Proficiencies</h3>
+          <ul>
+            {frontendArr.map((name) => (
+              <li className='proficText' key={name}>{name}</li>
+            ))}
+          </ul>
+        </div>
+        <div className='backendContainer'>
+          <h3>Back-end Development Proficiencies</h3>
+          <ul>
+            {backendArr.map((name) => (
+              <li className='proficText' key={name}>{name}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   )
