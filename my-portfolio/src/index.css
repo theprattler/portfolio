@@ -13,6 +13,7 @@
   --tertiary-color: #5885af;
   /* hover */
   --quaternary-color: #eff542;
+  --quinary-color: #14233b;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 }
 
 header {
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(to right, var(--secondary-color), var(--quinary-color));
   color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
@@ -185,7 +186,7 @@ a:hover {
 }
 
 footer {
-  background-color: var(--secondary-color);
+  background-image: linear-gradient(to right, var(--secondary-color), var(--quinary-color));
   display: flex;
   justify-content: center;
   position: absolute;

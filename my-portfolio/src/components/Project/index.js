@@ -11,20 +11,20 @@ function Project() {
     },
     {
       alt: 'LyricLover ',
-      text: 'HTML | CSS (Bulma) | JavaScript',
+      text: 'JavaScript | CSS (Bulma) | Third Party APIs',
       href: 'https://osamadahnoun.github.io/LyricLover/',
       githubText: ' GitHub Repo',
       githubLink: 'https://github.com/Osamadahnoun/LyricLover'
     },
     {
       alt: 'Your Weather Dashboard ',
-      text: 'JavaScript | OpenWeatherMap API',
+      text: 'JavaScript | CSS (Vanilla) | OpenWeatherMap API',
       href: 'https://theprattler.github.io/six-slaundering-salamanders/',
       githubText: ' GitHub Repo',
       githubLink: 'https://github.com/theprattler/six-slaundering-salamanders'
     },
     {
-      alt: 'Professional README Generator ',
+      alt: 'Professional CLI README Generator ',
       text: 'JavaScript | Inquirer',
       githubText: ' GitHub Repo',
       githubLink: 'https://github.com/theprattler/nine-nosy-neighbors'
