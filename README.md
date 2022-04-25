@@ -1,7 +1,7 @@
 # J Michael Smith (Portfolio)
 
 ## Greetings and Salutations
-Thank you for showing interest in my portfolio. Feel free to contact me using the links below. I hope you have a blessed day.
+Thank you for showing interest in my portfolio, designed with React.js. Feel free to contact me using the links below. I hope you have a blessed day.
 
 ## Screenshot
 ![About Me section of porftfolio](./src/assets/images/portfolio-screencap.png)
